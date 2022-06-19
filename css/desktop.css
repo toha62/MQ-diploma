@@ -27,8 +27,7 @@
 }
 
 img {
-  display: block;
-  border-style: none;
+  display: block;  
 }
 
 .banner {  
@@ -119,11 +118,11 @@ img {
 .trends {
   min-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0 0;
+  padding: 56px 0 0;
 }
 
 .trends__header {
-  margin-top: 5px;
+  margin-left: 28px;
   padding-right: 30px;  
 }
 
@@ -142,14 +141,14 @@ img {
   display: block;
   width: 66px;
   height: 3px;
-  margin: 9px auto 0;
+  margin: 6px auto 0;
   background-color: #e1d9bd;
 }
 
 .trends__container {
   display: flex;
   gap: 4px;
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .trends__card {
@@ -158,13 +157,13 @@ img {
 
   display: flex;
   align-items: flex-end;
+  box-sizing: border-box;
   min-height: 320px;
-  padding: 0 18px 16px;
+  padding: 0 21px 16px;
 
-  width: 24%;
+  width: 25%;
     
-  background-color: #666666;
-  /* background-image: url(/images/trend1.jpg); */
+  background-color: #666666;  
   background-size: cover;
   background-position: top;  
 }
@@ -198,7 +197,7 @@ img {
 }
 
 .trends__card-content {
-  padding: 36px 33px;
+  padding: 32px 33px;
   border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
@@ -207,7 +206,7 @@ img {
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 2.9em;
+  line-height: 2em;
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -220,8 +219,8 @@ img {
 }
 
 .trends__card-header {
-  margin-top: 5px;
-  padding-right: 30px;
+  /* margin-top: 5px; */
+  /* padding-right: 30px; */
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2em;  
@@ -295,7 +294,7 @@ img {
 }
 
 .post__header {
-  margin-top: 5px;
+  margin-top: 10px;
   padding-right: 30px;
   font-size: 20px;
   font-weight: 700;
@@ -314,7 +313,7 @@ img {
 }
 
 .post__caption{
-  padding-top: 23px;
+  padding-top: 25px;
 
 }
 
@@ -356,12 +355,12 @@ img {
 }
 
 .aside-block:nth-child(n+2) {
-  margin-top: 57px;  
+  margin-top: 59px;  
 }
 
 .section-header {
   display: block;  
-  margin-bottom: 25px;
+  margin: 2px 0 25px;
 
   font-size: 14px;
   font-weight: 700;
@@ -376,7 +375,7 @@ img {
   display: block;
   width: 66px;
   height: 3px;
-  margin: 9px auto 0;
+  margin: 11px auto 0;
 
   background-color: #e1d9bd; 
 }
@@ -388,12 +387,12 @@ img {
 }
 
 .new-posts__container:nth-of-type(n+2) {
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .new-post__image {
   width: 70px;
-  margin-top: 4px;
+  margin-top: 3px;
 
   background-color: #f4f7f6;
 }
@@ -410,7 +409,7 @@ img {
 }
 
 .new-post__content__header {
-  margin-top: 2px;
+  margin-top: 6px;
   
   font-size: 14px;
   font-weight: 700;
@@ -539,7 +538,7 @@ img {
 .tags-list__item { 
   font-size: 12px;
   font-weight: 700;
-  margin: 5px 8px 0 0;
+  margin: 7px 7px 0 0;
   padding: 4px 13px;
   
   text-decoration: none;
@@ -570,7 +569,7 @@ img {
 }
 
 .categories-list__item:nth-of-type(n+2) {
-  margin-top: 13px;
+  margin-top: 16px;
 }
 
 .categories-list__item::after {
@@ -611,34 +610,40 @@ img {
 /* Блок "Наши изделия" */
 
 .shop {
-  padding: 20px 0;
+  padding-top: 57px;
 }
 
 .shop-cards__container {
-  display: flex;  
-  gap: 70px;
+  display: flex;    
+  gap: 66px;
   width: 100%;
   margin-top: 30px;
 }
 
 .shop-card {
+  display: flex;
+  flex-direction: column;
+
   flex-basis: 33%;  
 }
 
 .shop-card__image {  
-  padding: 0 20px;
+  padding: 0 21px;
 }
 
 .shop-card__content {
   position: relative;
   top: -30px;  
-  padding: 40px 20px 20px;
+
+  flex-grow: 1;
+
+  padding: 40px 20px 23px;
 
   border: 3px solid #b59f5b;
 }
 
 .shop-card__header {
-  margin-top: 5px;
+  margin-top: 10px;
   padding-right: 30px;
   font-size: 20px;
   font-weight: 700;
@@ -648,8 +653,8 @@ img {
 }
 
 .shop-card__description {
-  margin: 5px 0 15px;
-  padding-right: 30px;
+  margin: 2px 0 16px;
+  /* padding-right: 30px; */
   font-size: 15px;  
   line-height: 1.5em;  
   
@@ -671,19 +676,22 @@ img {
   justify-content: space-between;
 }
 
+.shop-card__price {
+  align-self: flex-end;
+  padding-bottom: 8px;
+}
+
 .shop-card__old-price {
   font-size: 14px;
-  font-weight: 700;
-  line-height: 1.7em; 
+  font-weight: 700;  
   text-decoration: line-through;
 
   color: #0f0d0e;
 }
 
-.shop-card__true-price {
+.shop-card__true-price { 
   font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2em; 
+  font-weight: 700;  
 
   color: #0f0d0e;
 }
@@ -691,6 +699,7 @@ img {
 .shop-card__button {
   width: 140px;
   height: 50px;
+  margin-top: 5px;
   
   font-size: 14px;
   font-weight: 700;
@@ -714,7 +723,7 @@ img {
 
   box-sizing: border-box;
   width: 1200px;
-  padding: 64px 15px 0;
+  padding: 35px 15px 0;
   margin: 0 auto;
   
 }
@@ -733,7 +742,7 @@ img {
 }*/
 
 .social-item {
-  margin: 0 35px;  
+  margin: 0 11px;  
 }
 
 .social-link {
@@ -746,20 +755,28 @@ img {
   background-repeat: no-repeat;  
 }
 
-.social-link__twitter {  
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+.social-item__twitter {  
+  background-image: url(/svg/004-twitter.svg);
 }
 
-.social-link__pinterestr {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+.social-item__pinterest {
+  background-image: url(/svg/001-pinterest.svg);
 }
 
-.social-link__tumblr {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+.social-item__facebook {
+  background-image: url(/svg/002-facebook-logo.svg);
+}
+
+.social-item__instagram {
+  background-image: url(/svg/005-instagram.svg);
+}
+
+.social-item__tumblr {
+  background-image: url(/svg/003-tumblr.svg);
 }
 
 .copyright {
-  margin-top: 72px; 
+  margin-top: 68px; 
 
   text-align: center;
 }
