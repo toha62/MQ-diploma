@@ -121,6 +121,8 @@ img {
   padding: 56px 0 0;
 }
 
+/* Блок "Сейчас в тренде" */
+
 .trends__header {
   margin-left: 28px;
   padding-right: 30px;  
@@ -142,6 +144,7 @@ img {
   width: 66px;
   height: 3px;
   margin: 6px auto 0;
+
   background-color: #e1d9bd;
 }
 
@@ -160,12 +163,11 @@ img {
   box-sizing: border-box;
   min-height: 320px;
   padding: 0 21px 16px;
-
   width: 25%;
     
   background-color: #666666;  
   background-size: cover;
-  background-position: top;  
+  background-position: center;  
 }
 
 .trends__card::after {
@@ -197,6 +199,7 @@ img {
 }
 
 .trends__card-content {
+  flex-grow: 1;
   padding: 32px 33px;
   border: 3px solid rgba(181, 159, 91, 0.6);
 }
@@ -218,9 +221,7 @@ img {
   margin-left: 15px;
 }
 
-.trends__card-header {
-  /* margin-top: 5px; */
-  /* padding-right: 30px; */
+.trends__card-header {  
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2em;  
@@ -237,6 +238,8 @@ img {
   color: #b59f5b;
 }
 
+/* Основной блок */
+
 .page-body {
   display: flex;
   flex-wrap: wrap;
@@ -246,14 +249,14 @@ img {
   box-sizing: border-box;
   width: 1200px;
   padding: 60px 15px 0;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
+
+/* Блок "Посты" */
 
 .main {
   display: block;
-  width: 778px;
-  
+  width: 778px;  
 }
 
 .post {
@@ -296,6 +299,7 @@ img {
 .post__header {
   margin-top: 10px;
   padding-right: 30px;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2em;  
@@ -314,7 +318,6 @@ img {
 
 .post__caption{
   padding-top: 25px;
-
 }
 
 .post__caption_date {
@@ -344,6 +347,8 @@ img {
   margin-top: 12px;
 }
 
+/* Блок "Боковая колонка" */
+
 .aside {
   width: 272px;  
 }
@@ -357,6 +362,8 @@ img {
 .aside-block:nth-child(n+2) {
   margin-top: 59px;  
 }
+
+/* Блок "Новые посты" */
 
 .section-header {
   display: block;  
@@ -399,7 +406,6 @@ img {
 
 .new-post__content {
   width: 182px;
-
 }
 
 .new-post__content__date {
@@ -428,6 +434,8 @@ img {
 .new-post__content__header_decoration:hover {  
   color: #b59f5b;
 }
+
+/* Блок "Поиск" */
 
 .form-search {
   display: flex;
@@ -487,6 +495,8 @@ img {
   overflow: hidden;
 } 
 
+/* Блок "Рассылка" */
+
 .form-subscribe {
   display: block;
 }
@@ -523,6 +533,8 @@ img {
   color: #ffffff;
 }
 
+/* Блок "Теги" */
+
 .tags-header {
   margin-bottom: 20px;
 }
@@ -536,17 +548,16 @@ img {
 }
 
 .tags-list__item { 
-  font-size: 12px;
-  font-weight: 700;
   margin: 7px 7px 0 0;
   padding: 4px 13px;
-  
+
+  font-size: 12px;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 
-  border: 3px solid #f4f3f1;
-
   color: #0f0d0e;
+  border: 3px solid #f4f3f1; 
 }
 
 .tags-list__item:hover {
@@ -558,6 +569,8 @@ img {
 
   color: inherit;
 }
+
+/* Блок "Темы" */
 
 .categories-list {
   margin-top: -2px;
@@ -588,8 +601,7 @@ img {
 
 .categories-list__item_text {
   font-size: 14px;
-  font-weight: 700;    
-  
+  font-weight: 700; 
   text-transform: capitalize;
 
   color: #000000;
@@ -653,8 +665,7 @@ img {
 }
 
 .shop-card__description {
-  margin: 2px 0 16px;
-  /* padding-right: 30px; */
+  margin: 2px 0 16px;  
   font-size: 15px;  
   line-height: 1.5em;  
   
