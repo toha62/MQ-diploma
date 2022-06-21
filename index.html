@@ -6,16 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NOEMI Блог о тврчестве, спорте и образе жизни</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 640px)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1200px)">
 </head>
 
 <body>
   <header class="banner">    
     <div class="banner__container">
-      <nav class="navigation">        
+      <nav class="navigation">     
+        <button class="navigation__button">
+          <span class="navigation__button-label">
+            открыть меню
+          </span>
+        </button>
+        
         <a class="navigation__logo" href="#0">
           <img src="svg/noemi-logo.svg" alt="Логотип">
-        </a>
+        </a>        
         
         <ul class="navigation__menu">
           <li class="navigation__menu_item">
@@ -125,9 +132,9 @@
   <div class="page-body">
     <main class="main">
       <article class="post">
-        <div class="post__image">
-          <img src="images/last-post1.jpg" alt="Песчаный пляж на рассвете">
-        </div>
+        
+        <img class="post__image" src="images/last-post1.jpg" alt="Песчаный пляж на рассвете">
+        
 
         <div class="post__content">
           <ul class="post__tags">
@@ -164,9 +171,9 @@
       </article>
 
       <article class="post">
-        <div class="post__image">
-          <img src="images/last-post2.jpg" alt="Девушка занимается йогой на берегу моря">
-        </div>
+        
+        <img class="post__image" src="images/last-post2.jpg" alt="Девушка занимается йогой на берегу моря">
+        
 
         <div class="post__content">
           <ul class="post__tags">
@@ -203,9 +210,9 @@
       </article>
 
       <article class="post">
-        <div class="post__image">
-          <img src="images/last-post3.jpg" alt="Зрители перед сценой">
-        </div>
+        
+        <img class="post__image" src="images/last-post3.jpg" alt="Зрители перед сценой">
+        
 
         <div class="post__content">
           <ul class="post__tags">
@@ -242,9 +249,9 @@
       </article>
 
       <article class="post">
-        <div class="post__image">
-          <img src="images/last-post4.jpg" alt="Накрытый стол">
-        </div>
+        >
+        <img class="post__image" src="images/last-post4.jpg" alt="Накрытый стол">
+        
 
         <div class="post__content">
           <ul class="post__tags">
@@ -281,9 +288,9 @@
       </article>
 
       <article class="post">
-        <div class="post__image">
-          <img src="images/last-post5.jpg" alt="Подушка с принтом">
-        </div>
+        
+        <img class="post__image" src="images/last-post5.jpg" alt="Подушка с принтом">
+        
 
         <div class="post__content">
           <ul class="post__tags">
@@ -321,85 +328,7 @@
             </p>                    
           </div>
         </div>
-      </article>
-
-      <!-- <article class="post">
-        <div class="post__image">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Двое путешественников на скале">
-        </div>
-
-        <div class="post__content">
-          <ul class="post__tags">
-            <li class="post__tag">
-              <a class="menu_item_link" href="#0">travel</a>
-            </li>
-            <li class="post__tag">
-              <a class="menu_item_link" href="#0">lyfestyle</a>
-            </li>            
-          </ul>
-
-          <h2 class="post__header">
-            <a class="post__header_decoration" href="#0">
-              Как первый раз отправиться в горы ?
-            </a>
-          </h2>
-
-          <div class="post__caption">
-            <span class="post__caption_date">
-              10 июня 2019
-            </span>
-            <span class="post__caption_author">
-              Неизвестный автор
-            </span>
-          </div>
-
-          <div class="post__text">
-            <p class="post__text_paragraph">
-              Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это 
-              зависит от многих факторов, не только от ваших желаний и интересов.
-            </p>                    
-          </div>
-        </div>
-      </article>
-
-      <article class="post">
-        <div class="post__image">
-          <img src="images/last-post4.jpg" alt="Накрытый кухонный стол">
-        </div>
-
-        <div class="post__content">
-          <ul class="post__tags">
-            <li class="post__tag">
-              <a class="menu_item_link" href="#0">lyfestyle</a>
-            </li>
-            <li class="post__tag">
-              <a class="menu_item_link" href="#0">food</a>
-            </li>
-          </ul>
-
-          <h2 class="post__header">
-            <a class="post__header_decoration" href="#0">
-              Наукоёмкий подход к кулинарии
-            </a>
-          </h2>
-
-          <div class="post__caption">
-            <span class="post__caption_date">
-              10 июня 2019
-            </span>
-            <span class="post__caption_author">
-              Неизвестный автор
-            </span>
-          </div>
-
-          <div class="post__text">
-            <p class="post__text_paragraph">
-              Узнаем основы проектирования новых пищевых и около-пищевых опытов,
-               вскроем физику, химию и микробиологию еды.
-            </p>                      
-          </div>
-        </div>
-      </article> -->
+      </article>      
     </main>
 
     <aside class="aside">
@@ -582,7 +511,7 @@
       <div class="shop-cards__container">
 
         <article class="shop-card"> 
-          <div class="shop-card__image">       
+          <div class="shop-card__image-container">       
             <picture>
               <source 
                 media="(min-width: 1200px)" 
@@ -593,7 +522,7 @@
               <source 
                 media="(min-width: 360px)" 
                 srcset="images/shop-item-mobile1.jpg">  
-              <img 
+              <img class="shop-card__image"
                 src="images/shop-item-desk1.jpg"
                 alt="подушка с принтом">  
             </picture>
@@ -619,7 +548,7 @@
         </article>
 
         <article class="shop-card"> 
-          <div class="shop-card__image">       
+          <div class="shop-card__image-container">       
             <picture>
               <source 
                 media="(min-width: 1200px)" 
@@ -630,7 +559,7 @@
               <source 
                 media="(min-width: 360px)" 
                 srcset="images/shop-item-mobile2.jpg">  
-              <img 
+              <img class="shop-card__image"
                 src="images/shop-item-desk1.jpg"
                 alt="рукодельная кукла «Зайчик»">  
             </picture>
@@ -656,7 +585,7 @@
         </article>
 
         <article class="shop-card"> 
-          <div class="shop-card__image">       
+          <div class="shop-card__image-container">       
             <picture>
               <source 
                 media="(min-width: 1200px)" 
@@ -667,7 +596,7 @@
               <source 
                 media="(min-width: 360px)" 
                 srcset="images/shop-item-mobile3.jpg">  
-              <img 
+              <img class="shop-card__image"
                 src="images/shop-item-desk1.jpg"
                 alt="необычная шестиугольная рамка для украшения дома">  
             </picture>

@@ -34,7 +34,7 @@ img {
   position: relative;
   z-index: 0;
 
-  min-width: 1200px;
+  min-width: 1200px; 
   margin: 0 auto;
     
   background-color: #666666;
@@ -115,13 +115,13 @@ img {
   color: #ffffff;
 }
 
+/* Блок "Сейчас в тренде" */
+
 .trends {
   min-width: 1200px;
   margin: 0 auto;
   padding: 56px 0 0;
 }
-
-/* Блок "Сейчас в тренде" */
 
 .trends__header {
   margin-left: 28px;
@@ -639,7 +639,7 @@ img {
   flex-basis: 33%;  
 }
 
-.shop-card__image {  
+.shop-card__image-container {  
   padding: 0 21px;
 }
 
