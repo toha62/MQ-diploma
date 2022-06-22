@@ -656,5 +656,47 @@
       <a class="copyright__link" href="#0">Copyright © 2009–2019 City Blog LLC.</a>
     </div>
   </footer>
+
+  <div class="popup-layer">
+    <div class="popup-window">
+      <h3 class="popup-window__header">ваш фидбек</h3>
+
+      <form class="popup-window__form" action="index.html">
+        <div class="popup-window__block">
+          <label class="popup-window__selector-label" for="selector">
+            Как часто вы заходите на сайт?
+          </label>
+          <select class="popup-window__selector" name="popup-selector" id="selector">
+            <option class="popup-window__selector-item" value="Почти каждый день">Почти каждый день</option>
+            <option class="popup-window__selector-item" value="Раз в несколько дней">Раз в несколько дней</option>
+            <option class="popup-window__selector-item" value="Раз в несколько недель">Раз в несколько недельо</option>
+            <option class="popup-window__selector-item" value="Несколько раз в год">Несколько раз в год</option>
+          </select>
+        </div>  
+        
+        <div class="popup-window__block">          
+          <span>Вы подписаны на e-mail рассылку?</span>          
+          <div class="popup-window__radio">
+            <input class="popup-window__radio-item" type="radio" id="radio-btn1" name="popup-window__radio" value="yes" checked>
+            <label class="popup-window__radio-text" for="radio-btn1">Да</label>
+          
+            <input class="popup-window__radio-item" type="radio" id="radio-btn2" name="popup-window__radio" value="no">
+            <label class="popup-window__radio-text" for="radio-btn2">Нет</label>
+          </div>
+        </div>
+
+        <div class="popup-window__block"></div>
+          <label class="popup-window__text-label" for="text-area">
+            Расскажите, какой контент вы хотели бы 
+            видеть на нашем сайте?
+          </label>
+          <textarea class="popup-window__text" name="text-area" id="text-area" placeholder="Может, больше рецептов?"></textarea>
+        </form>  
+        
+        <button class="popup-window__button" type="submit">отправить</button>
+      </form>
+    </div>
+
+  </div>
 </body>
 </html>
