@@ -659,6 +659,8 @@
 
   <div class="popup-layer">
     <div class="popup-window">
+      <div class="popup-window__x" onclick="closePopup()"></div>
+
       <h3 class="popup-window__header">ваш фидбек</h3>
 
       <form class="popup-window__form" action="index.html">
@@ -698,5 +700,11 @@
     </div>
 
   </div>
+
+  <script>
+    function closePopup() {
+      document.querySelector(".popup-layer").style.display = "none";
+    }
+  </script>
 </body>
 </html>
