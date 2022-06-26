@@ -101,8 +101,7 @@ img {
 }
 
 .banner__title {  
-  display: flex;
-  
+  display: flex;  
   margin-top: 105px;  
 }
 
@@ -357,9 +356,7 @@ img {
   width: 272px;  
 }
 
-.aside-block {
-  display: block;
-
+.aside-block {  
   margin-top: 0;  
 }
 
@@ -739,8 +736,7 @@ img {
   box-sizing: border-box;
   width: 1200px;
   padding: 35px 15px 40px;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .social {
