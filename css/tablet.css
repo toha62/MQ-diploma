@@ -223,7 +223,7 @@ img {
   align-items: flex-end;
   box-sizing: border-box;
   min-height: 232px;
-  padding: 0 15px 16px;
+  padding: 16px 15px;
   width: 100%;
     
   background-color: #666666;  
@@ -1112,7 +1112,7 @@ label {
   .trends__card {
     min-height: 247px;
     width: calc(50% - 1px);
-    padding: 0 19px 9px;
+    padding: 9px 19px;
   }
 
   .trends__card-content {    
@@ -1224,5 +1224,11 @@ label {
     margin-top: 38px;
 
     font-size: 18px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 641px) and (max-width: 1199px) {
+  .trends__card {
+    width: calc(25% - 1.5px);
   }
 }

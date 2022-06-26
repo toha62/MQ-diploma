@@ -224,7 +224,7 @@ img {
   box-sizing: border-box;
   min-height: 232px;
   width: 100%;
-  padding: 0 15px 16px;
+  padding: 16px 15px;
       
   background-color: #666666;  
   background-size: cover;
