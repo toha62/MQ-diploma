@@ -57,8 +57,8 @@ img {
 
 .banner__container {
   box-sizing: border-box;
-  width: 330px;
-  padding: 32px 0 210px;
+  /* width: 330px; */
+  padding: 32px 15px 210px;
   margin: 0 auto;
 }
 
@@ -74,9 +74,7 @@ img {
 .navigation__logo {  
   flex-grow: 1;
   width: 265px;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 175px;
+  margin: 175px 30px 0;  
 }
 
 .navigation__button {
@@ -164,7 +162,7 @@ img {
 }
 
 .banner__title_content {
-  width: 700px;
+  /* width: 700px; */
   margin: auto;
 
   font-size: 26px;
@@ -895,11 +893,11 @@ label {
 
 .popup-layer {
   position: fixed;
-  top: 0;
+  top: 0;  
   bottom: 0;
-  left: 0;
   right: 0;
-
+  left: 0;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -910,8 +908,7 @@ label {
 .popup-window {
   position: relative;
   box-sizing: border-box;
-  width: 330px;
-  /* height: 545px; */
+  max-width: 330px;  
   padding: 10px 25px 30px;
   
   background-color: #ffffff;
@@ -927,6 +924,7 @@ label {
   background-image: url(../svg/form-x.svg);
   background-repeat: no-repeat;
   background-size: 27px;
+  cursor: pointer;
 }
 
 .popup-window__header {
