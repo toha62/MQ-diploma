@@ -768,7 +768,7 @@ img {
 .shop-card__footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 8px;
+  padding: 0 4px;
 }
 
 .shop-card__price {
@@ -1178,6 +1178,10 @@ label {
     width: 68.27%;
   }
 
+  .tags-list__item {
+    margin-right: 10px;
+  }
+
   .shop {
     width: 100%;
     padding-top: 39px;
@@ -1209,6 +1213,10 @@ label {
     top: -36px;  
   
     padding: 47px 19px 23px;  
+  }
+
+  .shop-card__footer {
+    padding: 0 2px;
   }
 
   .popup-window {
@@ -1434,11 +1442,15 @@ label {
 
   .shop-card__content {  
     top: -34px;
-    padding: 42px 13px 25px;  
+    padding: 42px 20px 25px;  
   }
   
   .shop-card__header {    
     font-size: 20px;    
+  }
+
+  .shop-card__footer {    
+    padding: 0 1px;
   }
   
   .footer {    
