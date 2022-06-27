@@ -13,7 +13,7 @@
   <header class="banner">    
     <div class="banner__container">
       <nav class="navigation">     
-        <button class="navigation__button">
+        <button class="navigation__button" onclick="toggleMenu()">
           <span class="navigation__button-label">
             открыть меню
           </span>
@@ -23,7 +23,7 @@
           <img src="svg/noemi-logo.svg" alt="Логотип">
         </a>        
         
-        <ul class="navigation__menu">
+        <ul class="navigation__menu navigation__menu-hidden" id="menu">
           <li class="navigation__menu_item">
             <a class="menu_item_link" href="#0">Главная</a>
           </li>
@@ -55,8 +55,8 @@
 
   <section class="trends">
     <h2 class="trends__header section-header-h2">сейчас в тренде</h2>
-    <div class="trends__container">
 
+    <div class="trends__container">
       <div class="trends__card trends__card_backgr-img-1">
         <div class="trends__card-content">          
           <ul class="trends__card-tags">
@@ -134,7 +134,6 @@
         
         <img class="post__image" src="images/last-post1.jpg" alt="Песчаный пляж на рассвете">
         
-
         <div class="post__content">
           <ul class="post__tags">
             <li class="post__tag">
@@ -173,7 +172,6 @@
         
         <img class="post__image" src="images/last-post2.jpg" alt="Девушка занимается йогой на берегу моря">
         
-
         <div class="post__content">
           <ul class="post__tags">
             <li class="post__tag">
@@ -212,7 +210,6 @@
         
         <img class="post__image" src="images/last-post3.jpg" alt="Зрители перед сценой">
         
-
         <div class="post__content">
           <ul class="post__tags">
             <li class="post__tag">
@@ -251,7 +248,6 @@
         
         <img class="post__image" src="images/last-post4.jpg" alt="Накрытый стол">
         
-
         <div class="post__content">
           <ul class="post__tags">
             <li class="post__tag">
@@ -290,7 +286,6 @@
         
         <img class="post__image" src="images/last-post5.jpg" alt="Подушка с принтом">
         
-
         <div class="post__content">
           <ul class="post__tags">
             <li class="post__tag">
@@ -703,6 +698,16 @@
   <script>
     function closePopup() {
       document.querySelector(".popup-layer").style.display = "none";
+    }
+
+    function toggleMenu() {
+      if (document.querySelector(".navigation__menu").classList.contains("navigation__menu-hidden"))
+        {
+          document.querySelector(".navigation__menu").classList.remove("navigation__menu-hidden")
+        } 
+      else {
+        document.querySelector(".navigation__menu").classList.add("navigation__menu-hidden")
+      }      
     }
   </script>
 </body>
